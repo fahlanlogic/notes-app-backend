@@ -64,7 +64,7 @@ const getNoteById = (request, h) => {
 
   const response = h.response({
     status: 'fail',
-    message: 'Catatan gagal ditampilkan',
+    message: 'Catatan tidak ditemukan`',
   });
 
   response.code(404);
@@ -88,7 +88,7 @@ const editNoteById = (request, h) => {
 
     const response = h.response({
       status: 'success',
-      message: 'Catatan berhasil diubah',
+      message: 'Catatan berhasil diperbarui',
     });
 
     response.code(200);
